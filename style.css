@@ -106,29 +106,14 @@ h1{
     justify-content: center;
     margin: 0px auto 10px auto;
   }
-  .slide{
-    margin-top: 150px;
-    padding-top: 50px;
-    padding-bottom: 0px;
-    color:#ffffff;
-    background-color: #504f4f;
-    font-size: 40px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  section{
+  .section-title{
     text-align: center;
     margin-top: 150px;
-}
-h3{
-  padding: 10px auto;
-  /*estilo*/
-  color: #ffffff; 
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
+  }
+
+.slide{
+  font-size: 30px;
+  margin-top: 100px; 
 }
 } 
 
@@ -162,36 +147,20 @@ h3{
     justify-content: center;
     margin: 0px auto 10px auto;
   }
-   .slide{
-    margin-top: 150px;
-    padding-top: 50px;
-    padding-bottom: 0px;
-    color:#ffffff;
-    background-color: #504f4f;
-    font-size: 40px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  section{
+  .section-title{
     text-align: center;
     margin-top: 150px;
   }
-  h3{
-    padding: 10px auto;
-    /*estilo*/
-    color: #ffffff; 
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
+  .slide{
+    font-size: 25px;
+    margin-top: 100px;
   }
-  
 }
 
-section{
-    text-align: center;
+.section-title{
+  text-align: center;
 }
+
 .slide{
     margin-top: 80px;
     padding-top: 50px;
@@ -232,9 +201,14 @@ img{
   font-style: normal;
   background-color: #333232;
 }
+.section-info{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  
+  
+}
 h3{
-  padding: 10px auto;
-  /*estilo*/
   color: #ffffff; 
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -253,16 +227,100 @@ h3{
   padding: 20px 10px;
   background-color: #333232;
 }
-.history .item{
-  height: 100px;
-  width: 100px;
-  padding: 100px; 
 
-  /*estilo*/
-  background-color: #686767;
-  border-color: #181313;
+/*PRUEBA DEL OVERFLOW PARTE DE LA GALLERIA*/
+.item{
+  padding: 30px 40px; 
+  background-color: #504f4f;
   border-radius: 20px;
 }
+.text{
+  float: right; 
+  display: flex;
+  align-items: center;
+  word-break: break-all;
+  margin: 10px;
+}
+
+.gallery{
+  gap: 10px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ 
+  background-color: #333232;
+}
+
+.gallery img{
+  margin: 5px;
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/*EN ESTO ESTAMOS TRABAJANDO PARTE DE BOOKS*/
+.Books{
+  display: block; 
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #333232;
+}
+.items{
+  padding: 30px 40px; 
+  margin: 30px;
+  background-color: #504f4f;
+  border-radius: 20px;
+}
+
+.text1{
+  float: right; 
+  display: flex;
+  align-items: center;
+  word-break: break-all;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.text2{
+  float: left; 
+  display: flex;
+  align-items: center;
+  word-break: break-all;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.img-book{
+  margin: 5px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.img-book2{
+  float: right;
+  margin: 5px;
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
 /*fonts*/
 .roboto-thin {
   font-family: "Roboto", sans-serif;
