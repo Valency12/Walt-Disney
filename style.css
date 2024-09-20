@@ -291,60 +291,59 @@ h3{
 }
 
 /*EN ESTO ESTAMOS TRABAJANDO PARTE DE BOOKS*/
-.Books{
-  display: block; 
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
+.section-books{
   background-color: #333232;
+  padding: 5px;
 }
-.items{
-  padding: 30px 40px; 
-  margin: 30px;
+
+/* Estilos generales */
+.container {
+  border-radius: 20px;
   background-color: #504f4f;
-  border-radius: 20px;
+  display: flex;             /* Utilizamos flexbox */
+  flex-direction: row;       /* Coloca los elementos en una fila (horizontalmente) */
+  align-items: center;       /* Alinea verticalmente al centro */
+  gap: 20px;                 /* Espacio entre la imagen y el texto */
+  padding: 10px;
+  margin: 30px 100px;
+  flex-wrap: wrap;           /* Permite que los elementos se ajusten cuando el espacio es pequeño */
 }
 
-.text1{
-  float: right; 
-  display: flex;
-  align-items: center;
-  word-break: break-all;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-}
-.text2{
-  float: left; 
-  display: flex;
-  align-items: center;
-  word-break: break-all;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
+.image {
+  border-radius: 20px;
+  max-width: 70%;          /* Hace que la imagen sea responsiva */
+  /*width: 100px;
+  height: 200px;*/
+  height: auto;              /* Mantiene las proporciones de la imagen */
+  flex: 1 1 150px;           /* Permite que la imagen se ajuste con un tamaño mínimo */
 }
 
-.img-book{
-  margin: 5px;
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 20px;
+.text {
+  flex: 2 1 300px;           /* Hace que el texto ocupe más espacio que la imagen */
+  font-size: 1rem;           /* Tamaño de fuente */
+  text-align: justify;
 }
-.img-book2{
-  float: right;
-  margin: 5px;
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 20px;
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;  /* Cambia a columna cuando la pantalla es más pequeña */
+      text-align: center;      /* Centra el texto en pantallas pequeñas */
+     
+  }
+  
+  .image {
+      max-width: 60%;          /* Reduce el tamaño de la imagen en pantallas pequeñas */
+      margin-bottom: 10px;
+  }
 }
+
+
+
+
+
+
+
 
 /*fonts*/
 .roboto-thin {
