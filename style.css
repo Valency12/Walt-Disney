@@ -1,6 +1,6 @@
 body, main{
   margin: 0;
-  background-color: #504f4f;
+  background-color: #102f55;
 }
 main{
 display: block;
@@ -13,23 +13,21 @@ display: block;
     position: fixed; 
     top: 0; 
     /*estilo*/
-    background-color: #333232;
+    background-color: #061D3A;
+    border-bottom: 3px solid #ffffff;
+    
 } 
-h1{
-    max-width: 100%;
-    margin: 0 20px 0 120px;
 
-    /*estilo*/
-    color: #ffffff ;
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 40px;
+.Logo{
+  max-width: 100%;
+  height: 80px;
+  margin: 0px auto;
 }
+
 .search-conteiner{
     width: 100%;
     height: 20px;
-    padding: 10px 15px;
+    padding: 10px 10px;
     max-width: auto;
     min-width: auto;
     display: flex;
@@ -166,7 +164,7 @@ h1{
     padding-top: 50px;
     padding-bottom: 0px;
     color:#ffffff;
-    background-color: #504f4f;
+    background-color: #102f55;
     font-size: 40px;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -180,7 +178,7 @@ h1{
   font-family: "Roboto", sans-serif;
 }
 .sub{
-  color:#ffffff;
+  color:#061D3A;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -192,8 +190,7 @@ h1{
     margin-top: 0px;
     margin-bottom: 20px;
     padding-top: 0px;
-    color:#ffffff;
-    background-color: #504f4f;
+    color:#061D3A;
     font-size: 16px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -201,8 +198,7 @@ h1{
 }
 .year{
     margin-left: 5px;
-    color:#ffffff;
-    background-color: #504f4f;
+    color:#061D3A;
     font-size: 25px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -212,9 +208,10 @@ img{
     height: auto;
     text-align: center;
     display: block;
-    max-width: 100%;
-    width: 100%;
+    max-width: 85%;
+    width: auto;
     margin: 0 auto;
+    border-radius: 20px;
 }
 .img-caption{
   margin: 0px auto 0px auto;
@@ -224,9 +221,9 @@ img{
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
-  background-color: #333232;
+  background-color: #061D3A;
 }
-.section-info{
+.section-info, .section-books, .section-gallery, .section-frase{
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -237,6 +234,7 @@ h3{
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
+  text-align: center;
 }
 .history{
   display: flex;
@@ -248,23 +246,17 @@ h3{
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px 10px;
-  background-color: #333232;
+  /*estilo*/
+  background-color: #061D3A;
 }
 
-/*PRUEBA DEL OVERFLOW PARTE DE LA GALLERIA*/
 .item{
   padding: 30px 40px; 
-  background-color: #504f4f;
-  border-radius: 20px;
   max-width: 500px;
   max-height: 100%;
-}
-.text{
-  float: right; 
-  display: flex;
-  align-items: center;
-  word-break: break-all;
-  margin: 10px;
+  /*estilo*/
+  background-color: rgba(255, 255, 255, 0.767);
+  border-radius: 20px;
 }
 
 .gallery{
@@ -277,8 +269,9 @@ h3{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
- 
-  background-color: #333232;
+  /*estilo*/
+  background-color: #061D3A;
+  border-color: #ffffff;
 }
 
 .gallery img{
@@ -286,61 +279,129 @@ h3{
   width: 100%;
   max-width: 350px;
   height: 300px;
+  /*estilo*/
   object-fit: cover;
   border-radius: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.767);
 }
 
-/*EN ESTO ESTAMOS TRABAJANDO PARTE DE BOOKS*/
 .section-books{
-  background-color: #333232;
+  background-color: #061D3A;
   padding: 5px;
 }
 
-/* Estilos generales */
-.container {
-  border-radius: 20px;
-  background-color: #504f4f;
-  display: flex;             /* Utilizamos flexbox */
-  flex-direction: row;       /* Coloca los elementos en una fila (horizontalmente) */
-  align-items: center;       /* Alinea verticalmente al centro */
-  gap: 20px;                 /* Espacio entre la imagen y el texto */
+.container { 
   padding: 10px;
-  margin: 30px 100px;
-  flex-wrap: wrap;           /* Permite que los elementos se ajusten cuando el espacio es pequeño */
-}
+  display: flex; 
+  flex-direction: row;  
+  align-items: center;   
+  gap: 6px;  
+  flex-wrap: wrap;    
+  margin: 30px 130px;
 
-.image {
+  /*estilo*/
   border-radius: 20px;
-  max-width: 70%;          /* Hace que la imagen sea responsiva */
-  /*width: 100px;
-  height: 200px;*/
-  height: auto;              /* Mantiene las proporciones de la imagen */
-  flex: 1 1 150px;           /* Permite que la imagen se ajuste con un tamaño mínimo */
+  background-color: rgba(255, 255, 255, 0.767);
 }
 
-.text {
-  flex: 2 1 300px;           /* Hace que el texto ocupe más espacio que la imagen */
-  font-size: 1rem;           /* Tamaño de fuente */
-  text-align: justify;
+.imagens {
+  border-radius: 20px;
+  margin: 10px 15px;
+  text-align: center;
+  width: 200px;
+  height: 200px;                     
+  object-fit: cover;
 }
 
-/* Estilo responsivo para pantallas pequeñas */
-@media (max-width: 768px) {
-  .container {
-      flex-direction: column;  /* Cambia a columna cuando la pantalla es más pequeña */
-      text-align: center;      /* Centra el texto en pantallas pequeñas */
-     
-  }
-  
-  .image {
-      max-width: 60%;          /* Reduce el tamaño de la imagen en pantallas pequeñas */
-      margin-bottom: 10px;
+@media (max-width: 768px){
+  .container{
+    margin: 30px 90px;
+    padding: 20px;
+    text-align: center;
   }
 }
+@media (max-width: 480px){
+  .container{
+    margin: 30px 30px; 
+    padding: 20px;
+    text-align: center;
+  }
+  .imagens{
+    max-width: 100%;  
+    width: 200px;
+    height: 200px;  
+  }
+}
 
+.item-books{
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 700px;
+  max-height: 100%;
+}
+.sub-books{
+  padding-bottom: 20px;
+  color:#061D3A;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  word-break: break-all;
+  margin: 5px;
+}
+.text-books{
+  word-break: break-all;
+  float: right; 
+  display: flex;
+  align-items: center;
+  word-break: break-all;
+  color:#061D3A;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
 
+footer{
+  color: #504f4f;
+  width: 100%;
+  height: 100px;
+  padding-bottom: 60px;
+}
 
+.frase{
+  margin-bottom: 30px;
+  /*estilo*/
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.contacto{
+  margin-top: 20px;
+  /*estilo*/
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+a{
+  margin: 40px 30px 20px 30px; 
+  /*estilo*/
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*.section-frase{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}*/
 
 
 
@@ -364,7 +425,7 @@ h3{
   font-style: normal;
 }
 
-.roboto-medium {
+.roboto-medium { 
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
