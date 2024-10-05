@@ -165,7 +165,6 @@ main{
 }
 .subtitulo{
   align-items: center;
-  word-break: break-all;
   margin: 10px;
   color:#ffffff;
   font-family: "Roboto", sans-serif;
@@ -173,7 +172,6 @@ main{
 .sub{
   display: flex;
   align-items: center;
-  word-break: break-all;
   margin: 5px;
   /*estilo*/
   color:#061D3A;
